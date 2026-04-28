@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Minesweeper</title>
+    </head>
+    <body>
+        <h2>MINESWEEPER</h2>
+        <div id="player-input-area">
+            Width:
+            <input type="text" name="" id="user-cols" class="player-input-box" autocomplete="off" />
+            Height:
+            <input type="text" name="" id="user-rows" class="player-input-box" autocomplete="off" />
+            Mines:
+            <input
+                type="text"
+                name=""
+                id="user-mines"
+                class="player-input-box"
+                autocomplete="off"
+            />
+            <button id="update-settings-btn">Update</button>
+        </div>
+        <section id="main-container">
+            <section id="timer-area">
+                <div id="mines-left"></div>
+                <button id="reset-button"></button>
+                <div id="time-spent">000</div>
+            </section>
+            <section id="play-area">
+                <template id="tile-template">
+                    <div class="tile"></div>
+                </template>
+            </section>
+        </section>
+        <section id="bottom-section">
+            <div class="bottom-text">min/max width/height = 10 / 20</div>
+            <div class="bottom-text">min/max mines = 5% / 80%</div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>
