@@ -21,8 +21,8 @@ const projects = {
         minesweeper: {
             id: "minesweeper",
             title: "Minesweeper",
-            image: `/images/project_minesweeper.png`,
-            bgimage: `/images/description_minesweeper.png`,
+            image: `/javascript_collection/images/project_minesweeper.png`,
+            bgimage: `/javascript_collection/images/description_minesweeper.png`,
             description:
                 "Minesweeper is a puzzle game where the player must reveal all tiles without hitting a mine",
             link: "./minesweeper/index.html",
