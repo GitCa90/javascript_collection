@@ -4,6 +4,8 @@
 
 const dom = {
     projectList: document.getElementById("projects"),
+    detailEmbed: document.getElementById("detail_embed"),
+    detailInfo: document.getElementById("detail_info"),
     detailPanel: document.getElementById("detail_panel"),
     detailHeader: document.getElementById("detail_header"),
     detailImage: document.getElementById("detail_bgimg"),
@@ -11,11 +13,13 @@ const dom = {
     detailEnterBtn: document.getElementById("detail_enterButton"),
 };
 
+//Consider save state to local storage
 const state = {
     currentCat: "",
     currentProj: "",
 };
 
+//Some info not ready - More to come
 const projects = {
     games: {
         minesweeper: {
@@ -43,8 +47,9 @@ const projects = {
             title: "Roman Numeral Converter",
             image: `/javascript_collection/images/project_romannumeralconverter.png`,
             bgimage: "",
+            embed: true,
             description: "somedescription",
-            link: "somelink",
+            link: "./roman_numeral_converter/index.html",
         },
     },
 
@@ -131,10 +136,29 @@ function displayProjList() {
 function displayProjDetails() {
     const item = projects[state.currentCat][state.currentProj];
 
-    dom.detailHeader.textContent = item.title;
-    dom.detailImage.src = item.bgimage;
-    dom.detailDescription.textContent = item.description;
-    dom.detailEnterBtn.classList.remove("hidden");
+    resetProjDetails();
+
+    if (item.embed) {
+        dom.detailEmbed.src = item.link;
+        dom.detailEmbed.classList.remove("hidden");
+        dom.detailInfo.classList.add("hidden");
+    } else {
+        dom.detailEmbed.src = "";
+        dom.detailEmbed.classList.add("hidden");
+        dom.detailInfo.classList.remove("hidden");
+        dom.detailEnterBtn.classList.remove("hidden")
+       
+        dom.detailHeader.textContent = item.title;
+        dom.detailImage.src = item.bgimage;
+        dom.detailDescription.textContent = item.description;
+        
+    }
+}
+
+function resetProjDetails() {
+    dom.detailHeader.textContent = "";
+    dom.detailImage.src = "";
+    dom.detailDescription.textContent = "";
 }
 
 function updateActiveCat() {

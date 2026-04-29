@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-        <title>Document</title>
+        <title>Javascript Collection</title>
     </head>
     <body>
         <h1 id="header">Javascript Collection</h1>
@@ -18,12 +18,16 @@
             </aside>
             <main id="projects"></main>
             <section id="detail_panel">
-                <section id="detail_top_section">
-                    <h2 id="detail_header"></h2>
-                <img src="" alt="" id="detail_bgimg">
+                <section id="detail_info" class="hidden">
+                    <section id="detail_top_section">
+                        <h2 id="detail_header"></h2>
+                        <img src="" alt="" id="detail_bgimg" />
+                    </section>
+                    <p id="detail_description"></p>
+                    <div id="detail_enterButton" class="hidden">Enter ▶</div>
                 </section>
-                <p id="detail_description"></p>
-                <div id="detail_enterButton" class="hidden">Enter ▶</div>
+
+                <iframe id="detail_embed" src="" frameborder="0"></iframe>
             </section>
         </section>
 
