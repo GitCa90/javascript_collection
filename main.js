@@ -11,6 +11,8 @@ const dom = {
     detailEnterBtn: document.getElementById("detail_enterButton"),
 };
 
+const IMG = "javascript_collection/images";
+
 const state = {
     currentCat: "",
     currentProj: "",
@@ -21,8 +23,8 @@ const projects = {
         minesweeper: {
             id: "minesweeper",
             title: "Minesweeper",
-            image: "/images/project_minesweeper.png",
-            bgimage: "/images/description_minesweeper.png",
+            image: `${IMG}/project_minesweeper.png`,
+            bgimage: `${IMG}/description_minesweeper.png`,
             description:
                 "Minesweeper is a puzzle game where the player must reveal all tiles without hitting a mine",
             link: "./minesweeper/index.html",
@@ -30,7 +32,7 @@ const projects = {
         snake: {
             id: "snake",
             title: "Snake",
-            image: "/images/project_snake.png",
+            image: `${IMG}/images/project_snake.png`,
             bgimage: "",
             description: "somedescription",
             link: "somelink",
@@ -41,7 +43,7 @@ const projects = {
         romannumeralconverter: {
             id: "romannumeralconverter",
             title: "Roman Numeral Converter",
-            image: "/images/project_romannumeralconverter.png",
+            image: `${IMG}/project_romannumeralconverter.png`,
             bgimage: "",
             description: "somedescription",
             link: "somelink",
@@ -52,7 +54,7 @@ const projects = {
         fibonaccisequence: {
             id: "fibonaccisequence",
             title: "Fibonacci Sequence",
-            image: "/images/category_algorithms.png",
+            image: `${IMG}/category_algorithms.png`,
             bgimage: "",
             description: "somedescription",
             link: "somelink",
