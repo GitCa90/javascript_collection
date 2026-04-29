@@ -4,6 +4,21 @@
     --light-background: rgb(140, 140, 140);
 }
 
+.back-btn {
+    user-select: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    color: white;
+    font-size: 40px;
+    user-select: none;
+}
+
+.back-btn:hover {
+    transform: scale(1.2);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -121,7 +136,7 @@ h2 {
 }
 
 #update-settings-btn:active {
-    transform: scale(0.95)
+    transform: scale(0.95);
 }
 
 .tile {
@@ -144,7 +159,6 @@ h2 {
     border-bottom: solid 5px var(--medium-background);
     border-right: solid 5px var(--medium-background);
 }
-
 
 #bottom-section {
     user-select: none;

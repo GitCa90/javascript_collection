@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="back-btn">⇦</div>
-    <div id="hello"></div>
-    <script src="main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="header">Javascript Collection</h1>
+        <section id="main-wrapper">
+            <aside id="category">
+                <div class="cat" data-category="games">Games</div>
+                <div class="cat" data-category="tools">Tools</div>
+                <div id="category_algorithms" class="cat" data-category="algorithms">
+                    Algorithms
+                </div>
+            </aside>
+            <main id="projects"></main>
+            <section id="detail_panel">
+                <section id="detail_top_section">
+                    <h2 id="detail_header"></h2>
+                <img src="" alt="" id="detail_bgimg">
+                </section>
+                <p id="detail_description"></p>
+                <div id="detail_enterButton" class="hidden">Enter ▶</div>
+            </section>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
 </html>
