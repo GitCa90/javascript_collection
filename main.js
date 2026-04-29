@@ -30,10 +30,10 @@ const projects = {
         snake: {
             id: "snake",
             title: "Snake",
-            image: `/images/project_snake.png`,
+            image: `/javascript_collection/images/project_snake.png`,
             bgimage: "",
-            description: "somedescription",
-            link: "somelink",
+            description: "Game of Snake",
+            link: "./snake/index.html",
         },
     },
 
@@ -41,7 +41,7 @@ const projects = {
         romannumeralconverter: {
             id: "romannumeralconverter",
             title: "Roman Numeral Converter",
-            image: `/images/project_romannumeralconverter.png`,
+            image: `/javascript_collection/images/project_romannumeralconverter.png`,
             bgimage: "",
             description: "somedescription",
             link: "somelink",
@@ -52,7 +52,7 @@ const projects = {
         fibonaccisequence: {
             id: "fibonaccisequence",
             title: "Fibonacci Sequence",
-            image: `/images/category_algorithms.png`,
+            image: `/javascript_collection/images/category_algorithms.png`,
             bgimage: "",
             description: "somedescription",
             link: "somelink",
