@@ -11,7 +11,7 @@ const dom = {
     detailEnterBtn: document.getElementById("detail_enterButton"),
 };
 
-const IMG = "javascript_collection/images";
+const IMG = "/javascript_collection/images";
 
 const state = {
     currentCat: "",
