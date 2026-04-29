@@ -80,11 +80,11 @@ dom.projectList.addEventListener("click", (e) => {
 });
 
 dom.detailPanel.addEventListener("click", (e) => {
-    const enter = e.target.closest("#detail_enterButton")
-    if (!enter) return
-    
+    const enter = e.target.closest("#detail_enterButton");
+    if (!enter) return;
+
     enterProject();
-})
+});
 
 // =====================
 // LOGIC
@@ -101,7 +101,6 @@ function setCurrentProj(target) {
 }
 
 function enterProject() {
-    console.log("hello")
     window.location.href = projects[state.currentCat][state.currentProj].link;
 }
 
@@ -135,8 +134,7 @@ function displayProjDetails() {
     dom.detailHeader.textContent = item.title;
     dom.detailImage.src = item.bgimage;
     dom.detailDescription.textContent = item.description;
-    dom.detailEnterBtn.classList.remove("hidden")
-
+    dom.detailEnterBtn.classList.remove("hidden");
 }
 
 function updateActiveCat() {
