@@ -19,7 +19,8 @@ const state = {
     currentProj: "",
 };
 
-//Some info not ready - More to come
+//`./images/image.png` for local
+
 const projects = {
     games: {
         minesweeper: {
@@ -27,8 +28,8 @@ const projects = {
             title: "Minesweeper",
             image: `/javascript_collection/images/project_minesweeper.png`,
             bgimage: `/javascript_collection/images/description_minesweeper.png`,
-            description:
-                "Minesweeper is a puzzle game where the player must reveal all tiles without hitting a mine",
+            description: `Minesweeper is a puzzle game where the player must 
+            reveal all tiles without hitting a mine`,
             link: "./minesweeper/index.html",
         },
         snake: {
@@ -36,7 +37,8 @@ const projects = {
             title: "Snake",
             image: `/javascript_collection/images/project_snake.png`,
             bgimage: "",
-            description: "Game of Snake",
+            description: `The player must keep the snake from colliding with the wall and itself,
+            which gets harder as the snake lengthens.`,
             link: "./snake/index.html",
         },
     },
@@ -48,7 +50,7 @@ const projects = {
             image: `/javascript_collection/images/project_romannumeralconverter.png`,
             bgimage: "",
             embed: true,
-            description: "somedescription",
+            description: "",
             link: "./roman_numeral_converter/index.html",
         },
     },
@@ -57,10 +59,11 @@ const projects = {
         fibonaccisequence: {
             id: "fibonaccisequence",
             title: "Fibonacci Sequence",
-            image: `/javascript_collection/images/category_algorithms.png`,
+            image: `/javascript_collection/images/project_fibonacci.png`,
             bgimage: "",
-            description: "somedescription",
-            link: "somelink",
+            embed: true,
+            description: "",
+            link: "./fibonacci_sequence/index.html",
         },
     },
 };
@@ -146,12 +149,11 @@ function displayProjDetails() {
         dom.detailEmbed.src = "";
         dom.detailEmbed.classList.add("hidden");
         dom.detailInfo.classList.remove("hidden");
-        dom.detailEnterBtn.classList.remove("hidden")
-       
+        dom.detailEnterBtn.classList.remove("hidden");
+
         dom.detailHeader.textContent = item.title;
         dom.detailImage.src = item.bgimage;
         dom.detailDescription.textContent = item.description;
-        
     }
 }
 
