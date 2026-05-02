@@ -1,3 +1,50 @@
+:root {
+    --card-background: url("../images/project_fibonacci.png");
+    --font-color: whitesmoke;
+}
+
 body {
-    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--font-color);
+    background: var(--background);
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+#userInput {
+    border: none;
+    margin: 0 auto;
+}
+
+#userInput:focus {
+    outline: none;
+}
+
+#sequence-section {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.numBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    white-space: pre-line;
+    height: 60px;
+    width: 60px;
+    color: black;
+    background-image: var(--card-background);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
 }
