@@ -106,9 +106,14 @@ function setCurrentCat(el) {
 function setCurrentProj(target) {
     state.currentProj = target.dataset.name;
     displayProjDetails();
+    
 }
 
 function enterProject() {
+    console.log(state.currentCat, state.currentProj);
+    console.log(projects[state.currentCat]);
+    console.log(projects[state.currentCat]?.[state.currentProj]);
+
     window.location.href = projects[state.currentCat][state.currentProj].link;
 }
 
@@ -122,11 +127,11 @@ function displayProjList() {
     const cat = state.currentCat;
     const fragment = document.createDocumentFragment();
 
-    for (const item of Object.values(projects[cat])) {
+    for (const [key, item] of Object.entries(projects[cat])) {
         const div = document.createElement("div");
 
         div.classList.add("proj");
-        div.dataset.name = item.id;
+        div.dataset.name = key
         div.textContent = item.title;
         div.style.backgroundImage = `url(${item.image})`;
 
@@ -146,7 +151,7 @@ function displayProjDetails() {
         dom.detailEmbed.classList.remove("hidden");
         dom.detailInfo.classList.add("hidden");
     } else {
-        dom.detailEmbed.src = "";
+        dom.detailEmbed.src = "about:blank";
         dom.detailEmbed.classList.add("hidden");
         dom.detailInfo.classList.remove("hidden");
         dom.detailEnterBtn.classList.remove("hidden");

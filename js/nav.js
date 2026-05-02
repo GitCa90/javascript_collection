@@ -4,6 +4,6 @@ export function setBackButton(selector) {
     if (!backButton) return;
 
     backButton.addEventListener("click", () => {
-        window.location.href = "../index.html";
+        window.location.href = "../../index.html";
     });
 }

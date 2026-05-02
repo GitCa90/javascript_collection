@@ -1,4 +1,4 @@
-import { setBackButton } from "../js/nav.js"
+import { setBackButton } from "../../js/nav.js"
 
 // ============================================================================
 // 🔹 DATA

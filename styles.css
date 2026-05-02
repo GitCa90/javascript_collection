@@ -132,6 +132,7 @@ h1 {
     color: var(--color-text);
     border-radius: var(--radius);
     background-color: darkred;
+    margin-bottom: 100%;
 }
 
 .hidden {
