@@ -41,6 +41,10 @@ h1 {
     border-radius: 20px;
 }
 
+#category_games {
+    background-image: url("images/category_games.png");
+}
+
 #category {
     min-width: 450px;
 }

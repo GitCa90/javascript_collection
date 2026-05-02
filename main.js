@@ -30,7 +30,7 @@ const projects = {
             bgimage: `/javascript_collection/images/description_minesweeper.png`,
             description: `Minesweeper is a puzzle game where the player must 
             reveal all tiles without hitting a mine`,
-            link: "./minesweeper/index.html",
+            link: "./games/minesweeper/index.html",
         },
         snake: {
             id: "snake",
@@ -39,7 +39,7 @@ const projects = {
             bgimage: "",
             description: `The player must keep the snake from colliding with the wall and itself,
             which gets harder as the snake lengthens.`,
-            link: "./snake/index.html",
+            link: "./games/snake/index.html",
         },
     },
 
@@ -51,7 +51,7 @@ const projects = {
             bgimage: "",
             embed: true,
             description: "",
-            link: "./roman_numeral_converter/index.html",
+            link: "./tools/roman_numeral_converter/index.html",
         },
     },
 
@@ -63,7 +63,7 @@ const projects = {
             bgimage: "",
             embed: true,
             description: "",
-            link: "./fibonacci_sequence/index.html",
+            link: "./algorithms/fibonacci_sequence/index.html",
         },
     },
 };
