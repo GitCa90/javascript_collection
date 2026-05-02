@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles_todo.css" />
+        <title>Todo</title>
+    </head>
+    <body>
+        <section id="main-wrapper">
+            <h1>TODO</h1>
+            <input
+                type="text"
+                name=""
+                id="user-input"
+                placeholder="Write and press Enter"
+                autocomplete="off"
+            />
+            <p id="error" class="hidden">Invalid Entry</p>
+            <section id="buttons">
+                <button id="allBtn" class="btn filterBtn" data-id="all">All</button>
+                <button id="activeBtn" class="btn filterBtn" data-id="active">Active</button>
+                <button id="completedBtn" class="btn filterBtn" data-id="completed">
+                    Completed
+                </button>
+                <button id="deleteBtn" class="btn delButton">Delete</button>
+            </section>
+            <div id="list-section"></div>
+        </section>
+        <script src="main_todo.js"></script>
+    </body>
+</html>

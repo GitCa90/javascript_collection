@@ -53,6 +53,15 @@ const projects = {
             description: "",
             link: "./tools/roman_numeral_converter/index.html",
         },
+        todo: {
+            id: "todo",
+            title: "Todo",
+            image: `/javascript_collection/images/project_romannumeralconverter.png`,
+            bgimage: "",
+            embed: true,
+            description: "",
+            link: "./tools/todo/index.html",
+        },
     },
 
     algorithms: {
