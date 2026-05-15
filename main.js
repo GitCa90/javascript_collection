@@ -41,7 +41,7 @@ const projects = {
             which gets harder as the snake lengthens.`,
             link: "./games/snake/index.html",
         },
-        snake: {
+        breakout: {
             id: "breakout",
             title: "Breakout",
             image: `/javascript_collection/images/project_breakout.png`,
