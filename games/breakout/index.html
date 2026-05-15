@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="breakout_styles.css" />
+        <title>Breakout</title>
+    </head>
+    <body>
+        <section id="board">
+            <div id="score-board">
+                <div id="score" class="score-left"></div>
+                <div id="lives" class="score-right"></div>
+            </div>
+            <div id="game-board">
+                <div id="brick-area"></div>
+                <div id="ball"></div>
+                <div id="paddle"></div>
+                <div id="game-over" class="hidden">
+                    <p id="game-over-text">Game Over</p>
+                    <p id="continue-text">press any key to continue</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="breakout_main.js"></script>
+    </body>
+</html>

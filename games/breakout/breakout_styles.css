@@ -1,0 +1,110 @@
+:root {
+    --board-width: 1920px;
+    --board-height: 1080px;
+
+    --score-height: 128px;
+
+    --brick-width: 128px;
+    --brick-height: 32px;
+
+    --font-size: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(50, 50, 50), rgb(120, 120, 120));
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+#board {
+    background: linear-gradient(45deg, rgb(20, 40, 60), rgb(10, 10, 30));
+    border: solid 3px black;
+    margin-top: 50px;
+}
+
+#score-board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    height: var(--score-height);
+    width: var(--board-width);
+    color: whitesmoke;
+    font-size: var(--font-size);
+}
+
+.score-left {
+    width: 500px;
+    text-align: left;
+}
+
+.score-right {
+    width: 500px;
+    text-align: right;
+}
+
+#game-board {
+    height: var(--board-height);
+    width: var(--board-width);
+    position: relative;
+}
+
+#brick-area {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: calc(var(--brick-height) * 8);
+}
+
+.brick {
+    box-sizing: border-box;
+    border: solid 3px black;
+    border-radius: 5px;
+    width: var(--brick-width);
+    height: var(--brick-height);
+}
+
+#ball {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: whitesmoke;
+    border: solid 1px black;
+    border-radius: 16px;
+}
+
+#paddle {
+    position: absolute;
+    border: solid 1px black;
+    height: var(--brick-height);
+    background-color: lightskyblue;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#game-over {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    bottom: 400px;
+    transform: translateX(-50%);
+    align-items: center;
+    width: 500px;
+    color: whitesmoke;
+}
+
+#game-over-text {
+    font-size: 60px;
+}
+
+#continue-text {
+    font-size: var(--font-size);
+}
