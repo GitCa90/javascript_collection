@@ -41,6 +41,14 @@ const projects = {
             which gets harder as the snake lengthens.`,
             link: "./games/snake/index.html",
         },
+        snake: {
+            id: "breakout",
+            title: "Breakout",
+            image: `/javascript_collection/images/project_breakout.png`,
+            bgimage: "",
+            description: `You must break all the blocks by using the ball. If the ball hits the floor, you loose.`,
+            link: "./games/breakout/index.html",
+        },
     },
 
     tools: {
