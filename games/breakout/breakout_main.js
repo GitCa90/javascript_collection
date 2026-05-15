@@ -371,11 +371,10 @@ function renderPaddle() {
 
 function removeBrick() {
     for (const brick of brickData.bricks) {
-        const index = brick.id;
+        if (brick.visible) continue;
 
-        if (!brick.visible) {
-            dom.bricks[index].classList.add("hidden");
-        }
+        const id = brick.id;
+        dom.bricks[id].classList.add("hidden");
     }
 }
 
