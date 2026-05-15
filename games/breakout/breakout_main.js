@@ -369,7 +369,7 @@ function renderPaddle() {
     dom.paddle.style.width = `${paddle.width}px`;
 }
 
-function removeBrick(brick) {
+function removeBrick() {
     for (const brick of brickData.bricks) {
         const index = brick.id;
 
@@ -438,5 +438,3 @@ document.addEventListener("keyup", () => {
 
 createBrickElements();
 requestAnimationFrame(gameloop);
-
-console.log(brickData.bricks);

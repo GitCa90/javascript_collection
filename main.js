@@ -45,7 +45,7 @@ const projects = {
             id: "breakout",
             title: "Breakout",
             image: `/javascript_collection/images/project_breakout.png`,
-            bgimage: "",
+            bgimage: `/javascript_collection/images/description_breakout.png`,
             description: `You must break all the blocks by using the ball. If the ball hits the floor, you loose.`,
             link: "./games/breakout/index.html",
         },
